@@ -1,0 +1,32 @@
+/***********************************************
+ IMPORTS
+ ***********************************************/
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@config "~/tailwind.config.js";
+
+/***********************************************
+ THEME SETUP
+ ***********************************************/
+
+@theme {
+  --font-*: initial;
+  --font-sans: "Geist", sans-serif;
+  --font-display: "Bricolage Grotesque", sans-serif;
+
+  --color-primary: #000000;
+  --color-secondary: #d9d9d9;
+  --color-accent: #d9d9d9;
+  --color-background: ##fcfcfc;
+}
+
+/******************************************
+NEW UTILITIES
+*******************************************/
+
+.drag-none {
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+  cursor: default;
+}

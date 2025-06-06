@@ -1,0 +1,61 @@
+{
+  "buttons": {
+    "submit": "Invia",
+    "backToRoot": "Portami al salvo"
+  },
+  "common": {
+    "logo": "intooda.world"
+  },
+  "home": {
+    "title": "Home",
+    "headline": "Ciao! Sono Intooda",
+    "description": "Sono la tua guida per avviare un'attività in Lussemburgo in poche settimane. Preparati ad un'agenda piena!"
+  },
+  "about": {
+    "title": "Chi siamo",
+    "headline": "Lasciami presentarti il Lussemburgo",
+    "description": "Aprire un'attività in Lussemburgo offre alle aziende straniere un accesso strategico all'Europa e una serie di vantaggi per il business. Con il suo ambiente politico stabile, un'economia solida e una visione internazionale, il Lussemburgo è una posizione ideale per le aziende che puntano a espandersi e prosperare nel mercato europeo.",
+    "card": [
+      {
+        "title": "Stabilità politica ed economica",
+        "description": "Il Lussemburgo è rinomato per la sua stabilità politica e sociale, supportata da un solido quadro giuridico e da un rating creditizio AAA."
+      },
+      {
+        "title": "Regime fiscale favorevole",
+        "description": "Il regime fiscale favorevole alle imprese include aliquote di imposta sulle società basse, nessuna ritenuta sui dividendi verso i Paesi UE e convenzioni per evitare la doppia imposizione con oltre 80 paesi."
+      },
+      {
+        "title": "Accesso al mercato e al talento",
+        "description": "Il Lussemburgo offre un facile accesso ai principali mercati europei. Il suo eccellente sistema educativo e la forza lavoro multiculturale lo rendono una base ideale per reclutare team qualificati e raggiungere clienti e partner in tutto il continente."
+      }
+    ]
+  },
+  "success": {
+    "headline": "Ti stiamo mettendo in contatto con uno dei nostri esperti",
+    "description": "La tua richiesta è stata inviata. Ti contatteremo il prima possibile.",
+    "cta": "Inserisci la tua mail qui sotto per fissare un incontro conoscitivo.",
+    "thankYou": "Siamo quasi pronti al lancio",
+    "manageExpectations": "Ti contatteremo il prima possibile"
+  },
+  "form": {
+    "questionPlaceholder": "Fammi la tua prima domanda",
+    "emailPlaceholder": "Il tuo indirizzo email",
+    "honeypotLabel": "Don’t fill this out if you’re human:",
+    "setupCall": "Organizza una chiamata",
+    "suggestions": {
+      "one": "Tipi di entità legali in Lussemburgo",
+      "two": "Imposta sulle società in Lussemburgo",
+      "three": "Documenti necessari per avviare un'attività"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "La tua guida per avviare un'attività in Lussemburgo",
+      "description": "Intooda ti aiuta a orientarti nel processo di avviare un'attività in Lussemburgo, fornendo consulenza e supporto esperto."
+    },
+    "about": {
+      "title": "Chi siamo",
+      "description": "Scopri Intooda, la tua guida di fiducia per stabilire un'attività in Lussemburgo, e i vantaggi di fare affari in questo hub europeo strategico."
+    }
+  }
+}

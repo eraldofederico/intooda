@@ -1,0 +1,60 @@
+{
+  "buttons": {
+    "submit": "Submit",
+    "backToRoot": "Bring me to safety"
+  },
+  "common": {
+    "logo": "intooda.world"
+  },
+  "home": {
+    "title": "Home",
+    "headline": "Hi! I'm Intooda",
+    "description": "I’m your guide to setting up business in Luxembourg in weeks. Prepare for a busy calendar!"
+  },
+  "about": {
+    "title": "About",
+    "headline": "Let me introduce Luxembourg",
+    "description": "Setting up a business in Luxembourg offers foreign companies a strategic gateway to Europe and a host of business advantages. With its stable political environment, robust economy, and international outlook, Luxembourg is an ideal location for companies aiming to expand and thrive in the European market.",
+    "card": [
+      {
+        "title": "Political and economic stability",
+        "description": "Luxembourg is renowned for its political and social stability, supported by a strong legal framework and a AAA credit rating."
+      },
+      {
+        "title": "Favorable tax system",
+        "description": "The country’s business-friendly tax regime includes low corporate tax rates, no withholding tax on dividends to EU countries, and double tax treaties with over 80 countries."
+      },
+      {
+        "title": "Market and talent access",
+        "description": "Luxembourg provides easy access to major European markets. Its excellent education system and multicultural workforce make it an ideal base for recruiting skilled teams and reaching customers and partners across the continent."
+      }
+    ]
+  },
+  "success": {
+    "headline": "We are matching you with one of our experts",
+    "description": "Your request has been sent. We will get back to you as soon as possible.",
+    "cta": "Insert your email below to set up a free introductory meeting.",
+    "thankYou": "Ready for launch?",
+    "manageExpectations": "We will be in touch as soon as possible"
+  },
+  "form": {
+    "questionPlaceholder": "Ask your question",
+    "emailPlaceholder": "Your email address",
+    "honeypotLabel": "Don’t fill this out if you’re human:",
+    "suggestions": {
+      "one": "Types of legal entities in Luxembourg",
+      "two": "Corporate tax in Luxembourg",
+      "three": "Documents required to launch a business"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Your Guide to Setting Up Business in Luxembourg",
+      "description": "Intooda helps you navigate the process of setting up a business in Luxembourg, providing expert guidance and support."
+    },
+    "about": {
+      "title": "About",
+      "description": "Learn about Intooda, your trusted guide for establishing a business in Luxembourg, and the benefits of doing business in this strategic European hub."
+    }
+  }
+}
