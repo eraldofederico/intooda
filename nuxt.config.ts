@@ -23,6 +23,7 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
     "@nuxtjs/i18n",
+    "@nuxtjs/supabase",
   ],
   gtag: {
     id: "G-WFY95HZ6QC",
