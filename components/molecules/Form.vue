@@ -12,8 +12,8 @@
       <!-- Netlify needs this hidden input to wire the form name -->
       <input type="hidden" name="form-name" value="contact" />
 
-      <!-- ─── ALWAYS-PRESENT HIDDEN “email” FIELD ───────────────────── -->
-      <!-- This is how Netlify “knows” there is an email in the form. -->
+      <!-- ─── ALWAYS-PRESENT HIDDEN "email" FIELD ───────────────────── -->
+      <!-- This is how Netlify "knows" there is an email in the form. -->
       <input type="hidden" name="email" :value="email" />
 
       <!-- ─── HONEYPOT FIELD (invisible to humans) ─────────────── -->
@@ -47,7 +47,7 @@
           </button>
         </div>
 
-        <!-- Suggestion “chips” -->
+        <!-- Suggestion "chips" -->
         <div class="flex flex-wrap gap-2">
           <button
             v-for="key in suggestionKeys"
@@ -85,7 +85,7 @@
         </div>
       </div>
 
-      <!-- ─── FINAL STATE: “Set up a call” button (after submit) ─── -->
+      <!-- ─── FINAL STATE: "Set up a call" button (after submit) ─── -->
       <div v-else-if="step === 3" class="flex justify-center py-8"></div>
     </form>
   </div>
@@ -160,20 +160,31 @@ async function handleFormSubmit() {
   if (step.value !== 2) return; // only on step 2
 
   isLoading.value = true;
-  const payload = {
-    "form-name": "contact",
-    question: question.value,
-    email: email.value,
-  };
-
+  
   try {
-    const res = await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode(payload),
+    // Save to Supabase first
+    const { data: supabaseData } = await $fetch('/api/contacts', {
+      method: 'POST',
+      body: {
+        email: email.value,
+        question: question.value
+      }
     });
 
-    if (res.ok) {
+    // Then submit to Netlify for backup/compatibility
+    const netlifyPayload = {
+      "form-name": "contact",
+      question: question.value,
+      email: email.value,
+    };
+
+    const netlifyRes = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode(netlifyPayload),
+    });
+
+    if (netlifyRes.ok) {
       question.value = "";
       email.value = "";
       emit("form-submitted");
@@ -182,10 +193,10 @@ async function handleFormSubmit() {
       step.value = 3;
       router.replace({ query: { ...route.query, step: "3" } });
     } else {
-      console.error("Netlify form error:", res.statusText);
+      console.error("Netlify form error:", netlifyRes.statusText);
     }
   } catch (err) {
-    console.error(err);
+    console.error('Form submission error:', err);
   } finally {
     isLoading.value = false;
   }
